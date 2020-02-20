@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './reset.css';
 import './App.css';
 
 function App() {
@@ -32,22 +33,23 @@ function App() {
  	return (
 		<div className="App">
 			<h1>Binary to Decimal Conversor</h1>
-			 
-			 <label>Binary Number</label>
-			 <input 
-			   className="binary" 
-			   onChange={event => updateDecimal(event)}
-			   value={binary}
-			 />
-			 
-			 <label>Decimal Number</label>
-			 <input 
-			   className="decimal" 
-			   type="number"
-			   onChange={event => updateBinary(event)}
-			   value={decimal}
-			 />
-
+			<div className="container">
+				<label>Binary Number</label>
+				<input 
+					className="binary" 
+					onChange={event => updateDecimal(event)}
+					value={binary}
+				/>
+				
+				<label>Decimal Number</label>
+				<input 
+					className="decimal" 
+					type="number"
+					onChange={event => updateBinary(event)}
+					value={decimal}
+				/>
+				<p><i>Tip: </i>Try convert decimal to binary too! ;)</p>
+			</div>
 		</div>
 	);
 }
