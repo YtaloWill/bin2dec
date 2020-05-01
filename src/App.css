@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:500&display=swap');
 
 body {
-	background: #161925;
+	background: #444858;
 }
 
 .App, .container {
@@ -43,8 +43,37 @@ p {
 }
 
 input {
+	padding: 10px;
 	border-radius: 15px;
-	box-shadow: 5px 5px 10px black ;
+}
+
+input:focus {
+	transition: .2s;
+	border-color: #ee5622;
+	box-shadow: 0 2px 12px 0 rgba(0,0,0,.5);
+	
+}
+
+.footer {
+	display: 'block';
+	padding: '10px';
+	height: '60px';
+	width: '100%';
+}
+
+.content {
+	text-align: center;
+	margin: 5%;
+    position: 'fixed';
+    left: '0';
+    bottom: '0';
+    height: '60px';
+}
+
+#text {
+	width: max-content;
+	color: #eca72c;
+	padding: 5%;
 }
 
 input::-webkit-outer-spin-button,
